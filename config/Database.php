@@ -10,7 +10,6 @@ class Database {
 	private $db_name = '[dbname]';
 	private $username = '[username]';
 	private $password = '[password]';
-	//
 
 
 
