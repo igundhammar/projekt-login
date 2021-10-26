@@ -1,0 +1,163 @@
+@import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
+@import "https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@800&family=Padauk&family=Titillium+Web&display=swap";
+
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+    background: url("images/image2.jpg");
+    background-size: cover;
+
+}
+
+body {
+    font: 100% Helvetica, san-serif;
+    color: #000;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: "Titillium Web", san-serif;
+    font-weight: bold
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.82);
+    margin: 2em auto;
+    width: 40%;
+    max-width: 960px;
+    text-align: center;
+    height: 25em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2em;
+    gap: 0.5em;
+}
+
+form input {
+    padding: .7em;
+    border: none;
+    border-bottom: 1px solid #000
+}
+
+form input:focus {
+    outline: none;
+}
+
+form input[type=submit] {
+    background: rgb(105,154,153);
+    background: linear-gradient(248deg, rgba(105,154,153,1) 0%, rgba(86,153,136,1) 58%);
+    border: none;
+    border-radius: 20px;
+    padding: .8em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+    body {
+        overflow-x: hidden
+    }
+
+    .flex {
+        display: block
+    }
+
+    header {
+        width: 100%
+    }
+
+    header li {
+        padding: .2em
+    }
+
+    header .mainmenu, header .dropdowncontent {
+        display: none
+    }
+
+    header .dropdown {
+        display: inline-block
+    }
+
+    header .show {
+        display: block
+    }
+
+    .container {
+        width: 90%
+    }
+
+    .container .content {
+        width: 80%
+    }
+
+    .container .content article {
+        width: 95%
+    }
+
+    table {
+        display: flex;
+        flex-direction: column
+    }
+
+    table tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1em
+    }
+
+    table td {
+        display: flex;
+        gap: .5em
+    }
+
+    table tbody {
+        padding-bottom: 2em
+    }
+
+    table .mobileheading {
+        display: block
+    }
+
+    table .desktopheadings {
+        display: none
+    }
+
+    form {
+        grid-template-columns:1fr;
+        gap: 2em
+    }
+
+    form input[type=submit] {
+        width: 70%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    article {
+        padding: .5em
+    }
+
+    article p, article img {
+        width: 80%
+    }
+
+    header ul {
+        padding-left: 1em
+    }
+}
