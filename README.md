@@ -17,7 +17,8 @@ It's simple! Just run the command `git clone https://github.com/igundhammar/proj
 ### How can I use this project?
 This is just one of the elements of the entire project, you should use this log in to access the client website.
 The database in this repo uses a "users" table to log in with username and password.
-If you want to use this code with your own project, you should modify the properties in `config/Database.php` to match your database credentials.
+If you want to use this code with your own project, you should modify the properties in `config/Database.php` to match your database credentials as well as
+the parameters in `classes/User.php` to match your database table.
 
 If you want access to test the website with POST/PUT/DELETE, you can contact me and I will provide you with the user information to log in.
 
