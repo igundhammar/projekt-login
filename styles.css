@@ -10,6 +10,7 @@ html {
     scroll-behavior: smooth;
     background: url("images/image2.jpg");
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -17,10 +18,10 @@ body {
     font: 100% Helvetica, san-serif;
     color: #000;
     position: relative;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 h1 {
@@ -68,96 +69,25 @@ form input[type=submit] {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1050px) {
-    body {
-        overflow-x: hidden
-    }
+@media screen and (max-width: 600px) {
 
-    .flex {
-        display: block
-    }
-
-    header {
-        width: 100%
-    }
-
-    header li {
-        padding: .2em
-    }
-
-    header .mainmenu, header .dropdowncontent {
-        display: none
-    }
-
-    header .dropdown {
-        display: inline-block
-    }
-
-    header .show {
-        display: block
-    }
-
-    .container {
-        width: 90%
-    }
-
-    .container .content {
-        width: 80%
-    }
-
-    .container .content article {
-        width: 95%
-    }
-
-    table {
-        display: flex;
-        flex-direction: column
-    }
-
-    table tr {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 1em
-    }
-
-    table td {
-        display: flex;
-        gap: .5em
-    }
-
-    table tbody {
-        padding-bottom: 2em
-    }
-
-    table .mobileheading {
-        display: block
-    }
-
-    table .desktopheadings {
-        display: none
+    .content {
+        width: 95%;
     }
 
     form {
-        grid-template-columns:1fr;
-        gap: 2em
-    }
-
-    form input[type=submit] {
-        width: 70%
+        width: 95%;
+        padding: .5em;
     }
 }
 
-@media screen and (max-width: 600px) {
-    article {
-        padding: .5em
+@media screen and (max-width: 1200px) {
+    .content {
+        width: 95%;
     }
 
-    article p, article img {
-        width: 80%
-    }
-
-    header ul {
-        padding-left: 1em
+    form {
+        width: 80%;
+        padding: 1em;
     }
 }
