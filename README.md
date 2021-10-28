@@ -20,7 +20,7 @@ The database in this repo uses a "users" table to log in with username and passw
 If you want to use this code with your own project, you should modify the properties in `config/Database.php` to match your database credentials as well as
 the parameters in `classes/User.php` to match your database table.
 
-If you want access to test the website with POST/PUT/DELETE, you can contact me and I will provide you with the user information to log in.
+If you want access to test the website with CREATE/UPDATE/DELETE, you can contact me and I will provide you with the user information to log in.
 
 Start coding! 🙂
 
