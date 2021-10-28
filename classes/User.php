@@ -1,14 +1,17 @@
 <?php
 
+// Code by Ida Gundhammar 2021-10-28, student at Mittuniversitetet, HT2020.
+
 include_once 'config/Database.php';
 
-
+// Create class User with properties of the database connection and result from the database.
 class User {
 
 	private $db;
 	private $result;
 
 
+	// Opens connection to database.
 	public function __construct() {
 		$dbconn   = new Database();
 		$this->db = $dbconn->connect();
