@@ -1,3 +1,5 @@
+/* Code by Ida Gundhammar 2021-10-28, student at Mittuniversitetet, HT2020. */
+
 @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
 @import "https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@800&family=Padauk&family=Titillium+Web&display=swap";
 
@@ -6,6 +8,7 @@
     box-sizing: border-box
 }
 
+/* Background image */
 html {
     scroll-behavior: smooth;
     background: url("images/image2.jpg");
@@ -38,7 +41,7 @@ h1 {
     text-align: center;
     height: 25em;
 }
-
+/* Log in form */
 form {
     display: flex;
     flex-direction: column;
@@ -59,6 +62,7 @@ form input:focus {
     outline: none;
 }
 
+/* Submit button */
 form input[type=submit] {
     background: rgb(105,154,153);
     background: linear-gradient(248deg, rgba(105,154,153,1) 0%, rgba(86,153,136,1) 58%);
@@ -69,6 +73,7 @@ form input[type=submit] {
     cursor: pointer;
 }
 
+/* Media querys */
 @media screen and (max-width: 600px) {
 
     .content {
